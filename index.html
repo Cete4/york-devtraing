@@ -110,86 +110,22 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Old code form before 
-                for (let i = 0; i < 20; i++) {
-                    if (userid.charAt(i) >= '0' && userid.charAt(i) <= '9') {
-                        num = true;
-                    } else if (userid.charAt(i) == userid.charAt(i).toUpperCase()) {
-                        upper = true;
-                    } else if (userid.charAt(i) == userid.charAt(i).toLowerCase()) {
-                        lower = true;
-                    }
-                }
+            // // Old code form before
+            //     for (let i = 0; i < 20; i++) {
+            //         if (userid.charAt(i) >= '0' && userid.charAt(i) <= '9') {
+            //             num = true;
+            //         } else if (userid.charAt(i) == userid.charAt(i).toUpperCase()) {
+            //             upper = true;
+            //         } else if (userid.charAt(i) == userid.charAt(i).toLowerCase()) {
+            //             lower = true;
+            //         }
+            //     }
 
                 if (upper && lower && num == true) {
                     document.getElementById("results").appendChild(document.createTextNode(userid + " is your official UserID. "));
                 } else {
                     document.getElementById("results").appendChild(document.createTextNode("Not a valid UserID. "));
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             if (fname == "") {
                 document.getElementById("results").appendChild(document.createTextNode("Please enter a first name."));
